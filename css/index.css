@@ -1,0 +1,187 @@
+#inicio {
+    scroll-margin-top: 1000px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 100%;
+    padding-top: 3%;
+
+    background-color: #37064e;
+    background-image: url(../img/indiano_terno.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px 10px;
+}
+.links {
+    display: flex;
+    gap: 10px;
+
+    padding: 15px;
+    border-radius: 200px;
+
+    background-color: #6d00a0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalog__presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10%;
+}
+.catalog__text-presentation {
+    display: flex;
+    align-items: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+.catalog__forms {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.catalog__forms p {
+    font-size: 20px;
+}
+
+
+
+
+.catalog__products {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    padding: 20px;
+    gap: 1%;
+}
+.catalog__card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    text-align: right;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    
+    background-color: #9762eb;
+    border-radius: 20px;
+    
+    transition: transform 0.5s ease;
+}
+.catalog__card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+
+
+.catalog__img {
+    width: 100%;
+    min-width: 100px;
+    height: 150px;
+    border-radius: 20px;
+    
+    background-color: #ee82ee;
+}
+.catalog__product-name {
+    font-family: "Global Tittle";
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+
+
+.catalog__buy-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.produto-valor {
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    background-color: #37064e;
+    color: white;
+
+    padding: 10px;
+    border-radius: 50px;
+
+    transition: transform 0.4s ease;
+}
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.7);
+}
+
+@media (min-width: 700px) {
+
+    .logo {
+        font-size: 100px;
+    }
+    
+    .catalog__presentation {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .catalog__text-presentation {
+        width: 60%;
+        align-items: center;
+    }
+
+    .catalog__products {
+        flex-direction: row;
+    }
+    .catalog__card {
+        width: 49%;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+}

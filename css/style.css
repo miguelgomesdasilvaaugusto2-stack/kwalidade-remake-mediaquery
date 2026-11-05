@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=Poppins:wght@300;500;600&display=swap');
+
+@font-face {
+  font-family: "Global Tittle";
+  src: url(../font/Steelfish\ Bd.otf);
+}
+
+body {
+  background-color: #643fa0;
+}
+
+p,
+a,
+button,
+label,
+h3,
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #fff;
+}
+
+.global-tittle {
+  font-family: "Global Tittle";
+  font-size: 100px;
+}
+
+.logo {
+  color: #e5ff00;
+  font-family: "Antonio", sans-serif;
+  font-weight: 300;
+  font-size: 70px;
+}
+
+main {
+  padding: 25px 5%;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+
+  transition:
+    opacity 0.5s ease,
+    transform 0.4s ease;
+}
+a:hover {
+  transform: translateY(-4px);
+  opacity: 0.75;
+}
+a:active {
+  transform: scale(0.7);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  background: linear-gradient(45deg, #ffffff00, #37064e);
+}
