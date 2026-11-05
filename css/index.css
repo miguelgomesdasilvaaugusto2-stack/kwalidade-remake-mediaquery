@@ -183,5 +183,11 @@ button:active {
 }
 
 @media (min-width: 1024px) {
+    .catalog__text-presentation {
+        width: 33%;
+    }
     
+    .catalog__card {
+        width: 24%;
+    }
 }
